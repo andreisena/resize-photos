@@ -1,0 +1,38 @@
+{
+  "name": "resize-photos",
+  "version": "0.1.0",
+  "description": "Resize Photos Challenge for SkyHub",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js --exec babel-node",
+    "build": "babel ./src -d ./dist",
+    "start": "npm run build && node ./dist/index.js",
+    "import": "babel-node ./src/import-photos.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreisena/resize-photos.git"
+  },
+  "author": "Andrei Sena <asena.dev@gmail.com> (andreisena.com.br)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreisena/resize-photos/issues"
+  },
+  "homepage": "https://github.com/andreisena/resize-photos#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "mongoose": "^4.13.0",
+    "morgan": "^1.9.0",
+    "sharp": "^0.18.4",
+    "uuid": "^3.1.0"
+  }
+}
